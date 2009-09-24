@@ -1,0 +1,34 @@
+#summary Cosas a tener en cuenta de la plantilla de LaTeX del repositorio.
+
+= Paquetes de LaTeX =
+
+== Paquete _OrdenesArticle_ ==
+En la sección de [http://code.google.com/p/isi-auditoria/downloads/list Downloads] se puede descargar el paquete _OrdenesArticle.sty_, utilizado en la plantilla que está en el repositorio.
+
+Este paquete personalizado se utiliza para dar el formato a un documento de tipo *article*, cuyas opciones son: 
+
+  - *spanish*: esta opción permite redefinir las leyendas de las tablas, para que aparezca la palabra «Tabla» en lugar de «Cuadro». Se usa junto con el paquete babel, con la opción de español.
+
+  - *cap*: esta opción se utiliza para cambiar el formato de las leyendas de tablas y figuras, utilizando el paquete _caption_.
+
+  - *cont*: esta opción se utiliza para subordinar el contador de figuras y tablas al número de sección. Para ello, se carga el paquete _chngcntr_.
+
+  - *title*: opción que se usa para cambiar el formato de los títulos de secciones, subsecciones, etc. Se carga para ello el paquete _titlesec_.
+
+  - *fancy*: esta opción se usa para configurar el estilo del encabezado y pie de página utilizando el paquete fancyhdr.
+
+Se puede utilizar cualquiera de estas opciones, o ninguna. En caso de usar otra opción, se mostrará un warning avisando que hay alguna opción incorrecta.
+
+Por ultimo, señalar, que para poder utilizar este paquete, hay que colocarlo en el mismo directorio de los archivos .tex.
+
+
+
+== Paquete _chngcntr_ ==
+
+Este paquete, como se comentó anteriormente, se utiliza en el paquete _OrdenesArticle_ para subordinar el contador de figuras y tablas al número de sección. Es decir, en la sección 1, los contadores serán 1.1, 1.2, etc. En la sección 2, serán 2.1, 2.2 y así sucesivamente.
+
+Este paquete no viene por defecto en el entorno de MiKTeX (recomendado para Windows, con una instalación *completa*). Para poder utilizarlo, hay varias opciones: 
+ 
+  - Descargar _chngctr.sty_ desde http://ctan.org/pkg/chngcntr y ponerlo en el mismo directorio de los archivos .tex. 
+
+  - Descargar _chngctr.sty_ desde la dirección anterior e instalarlo permanente en MikTeX. Su ubicación lógica es C:\Archivos de programa\MiKTeX 2.7\tex\latex\ltxmisc. Tras esto, ir a Inicio>Todos los programas>MikTeX>Settings y en la pestaña General, pulsar el botón Refresh FNDB. Con ello, se refresca la base de paquetes de MiKTeX. 
