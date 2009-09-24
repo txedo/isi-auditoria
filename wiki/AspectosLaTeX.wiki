@@ -1,9 +1,9 @@
 #summary Cosas a tener en cuenta de la plantilla de LaTeX del repositorio.
 
-= Paquetes de LaTeX =
+=Paquetes de LaTeX=
 
-== Paquete OrdenesArticle ==
-En la sección de [http://code.google.com/p/isi-auditoria/downloads/list Downloads] se puede descargar el paquete _OrdenesArticle.sty_, utilizado en la plantilla que está en el repositorio.
+==Paquete Ordenes Article==
+En la sección de [http://code.google.com/p/isi-auditoria/downloads/list Downloads] se puede descargar el paquete _Ordenes Article.sty_, utilizado en la plantilla que está en el repositorio.
 
 Este paquete personalizado se utiliza para dar el formato a un documento de tipo *article*, cuyas opciones son: 
 
@@ -25,7 +25,7 @@ Por ultimo, señalar, que para poder utilizar este paquete, hay que colocarlo en
 
 == Paquete chngcntr ==
 
-Este paquete, como se comentó anteriormente, se utiliza en el paquete _OrdenesArticle_ para subordinar el contador de figuras y tablas al número de sección. Es decir, en la sección 1, los contadores serán 1.1, 1.2, etc. En la sección 2, serán 2.1, 2.2 y así sucesivamente.
+Este paquete, como se comentó anteriormente, se utiliza en el paquete _Ordenes Article_ para subordinar el contador de figuras y tablas al número de sección. Es decir, en la sección 1, los contadores serán 1.1, 1.2, etc. En la sección 2, serán 2.1, 2.2 y así sucesivamente.
 
 Este paquete no viene por defecto en el entorno de MiKTeX (recomendado para Windows, con una instalación *completa*). Para poder utilizarlo, hay varias opciones: 
  
