@@ -19,7 +19,10 @@ Este paquete personalizado se utiliza para dar el formato a un documento de tipo
 
 Se puede utilizar cualquiera de estas opciones, o ninguna. En caso de usar otra opción, se mostrará un warning avisando que hay alguna opción incorrecta.
 
-Por ultimo, señalar, que para poder utilizar este paquete, hay que colocarlo en el mismo directorio de los archivos .tex.
+Por ultimo, señalar, que para poder utilizar este paquete, hay que colocarlo en el mismo directorio de los archivos .tex. Además, cambiar las siguientes líneas por el nombre del autor y de la signatura que corresponda:
+              _\rhead{\small{Juan Andrada Romero}}_
+	      _\lfoot{\scriptsize{\textbf{Almacenamiento y Recuperación de la Información}}}_
+
 
 
 
