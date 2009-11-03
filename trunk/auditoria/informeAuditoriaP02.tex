@@ -1,0 +1,50 @@
+% -*- coding: utf-8 -*-
+
+\subsection{Problemas relacionados con la Arquitectur de la Información}
+
+\begin{spacing}{1.4}
+
+%En cuanto a diccionario de datos empresarial y reglas de sintaxis
+
+La empresa DIGSOL carece de un diccionario de datos empresarial que defina las reglas
+de sintaxis para los datos de la organización lo que produce:
+-Peor entendimiento entre los usuarios del sistema de TI y del Negocio.
+-Posibilidad de creación de elementos de datos incompatibles.
+
+%En cuanto al esquema de clasificacion de datos y la administración de la integridad
+Existe un esquema de clasificación de datos definido en el que cada tipo de usuario tiene
+acceso a una información concreta pero al no encriptar la información que viaja en texto plano
+por la red local es fácilmente interceptable por los demás usuarios de la empresa incluso por usuarios
+externos ya que además la protección de la wifi se realiza mediante clave WEP que es un tipo de clave 
+fácil de obtener mediante aplicaciones como AirCrack lo que compromete la integridad del sistema.
+
+USB y dispositivos ópticos no bloqueados: Los USB y los dispositivos ópticos
+de los ordenadores de la empresa no están bloqueados, lo que permitiría que un
+usuario malintencionado tomar documentos y datos de carácter confidencial para
+la empresa, introducir virus o troyanos en el sistema
+%En cuanto a Administración de integridad
+
+No existen procedimientos periódicos para cambio de contraseñas de los
+usuarios en el sistema. Estas claves son facilitadas en la incorporación del
+usuario a la empresa y no son eliminadas tras su despido por el departamento de
+SI cuando recibe la confirmación pertinente.
+
+El diagrama de la base de datos es correcto pero su implementación no es coherente con el diagrama diseñado.
+Una vez hemos estudiado la base de datos hemos comprobado que las claves ajenas están ausente en la creación 
+de las tablas, así como campos que no deben estar vacios están definidos con la posibilidad de serlo.
+
+El acceso a la base de datos es posible si se conoce la cadena de conexión a la misma ya que carece de clave de
+usuario y de acceso ya que se ha utilizado SQL Server con modo de autenticación de Windows. Es posible obtener 
+la ruta de acceso a la base de datos utilizando aplicaciones sniffer que se utilizan para escuchar la 
+información que viaja por nuestra red local de forma que podemos obtener más información de la que el usuario
+debiese obtener.
+
+Carece de una base de datos centralizada que contenga la información completa de la empresa, hay una base de datos
+que almacena una parte (productos,empleados,usuarios registrados...) y otra parte que se almacena en ficheros de texto
+como facturas... Puesto que las facturas están relacionadas con productos, usuarios registrados y empleados entre otros
+estas deberían estar integradas en la base de datos centralizada.
+
+
+
+\end{spacing}
+
