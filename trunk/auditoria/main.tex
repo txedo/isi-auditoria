@@ -34,11 +34,23 @@
 
 \begin{document}
 
-% En las páginas de portada e índices, no hay encabezado ni pie de página
-\pagestyle{fancy} 
 
 % Se incluye la portada
 \input{portada.tex}
+
+\pagenumbering{Roman}
+
+% En las páginas de portada e índices, no hay encabezado ni pie de página
+\pagestyle{plain} 
+
+\tableofcontents
+\clearpage\phantomsection
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+\newpage
+
+\pagestyle{fancy} 
+\pagenumbering{arabic}
 
 % Se ajusta la separación entre párrafos
 \parskip=10pt
