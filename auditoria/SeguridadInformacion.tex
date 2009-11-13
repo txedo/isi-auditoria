@@ -1,0 +1,45 @@
+% -*- coding: utf-8 -*-
+
+\subsection{Deficiencia en la seguridad de la información y en las instalaciones}
+
+\begin{spacing}{1.4}
+
+Continuando con la auditoría, con respecto a las instalaciones de la empresa, se observa que:
+	- Las instalaciones son poco o nada seguras.
+	- Existen deficiencias en la ubicación del servidor.
+	
+	Observando el entorno de trabajo y las instalaciones que posee la empresa se ve que carece de cualquier tipo de medida sobre la restricción o no del acceso a las instalaciones por parte del personal como por parte de personal ajeno a la empresa.
+	Todas las salas en las que se ubican los departamentos carecen de cerraduras en las puertas o de sistemas de acceso controlado, tampoco se controla el acceso a la empresa de ninguna manera. Cualquiera puede entrar a las instalaciones de la empresa y acceder a cada departamento pudiendo llevarse físicamente cualquier dispositivo que contenga información, lo que provoca un grave riesgo en la seguridad.
+	Cuando se pregunta si existía y se podía revisar el plan de seguridad con las medidas relativas al acceso a las instalaciones se obtuvo una respuesta negativa.
+	
+	La ubicación del centro de datos y del servidor que los contiene no ha sido bien planeada y estudiada ya que no se corresponde con el diseño óptimo que debe tener el espacio físico destinado a servidores, por lo que existe riesgo de que el servidor se caliente en exceso y se estropee dejando sin servicio de venta online a la empresa, lo que se traduciría en cuantiosas pérdidas económicas, tanto en ventas como en deterioro de la imagen de la empresa en internet.	
+En caso de incendio, inundación o algún otro desastre, el servidor que contiene los datos podría estropearse, ya que, como se ha observado, el local en el que se ubica no es el apropiado ni está dotado de medidas de prevención y protección ante tales eventualidades.
+
+	Finalmente hay que destacar que no existe ningún sistema de alimentación ininterrumpida ni tampoco una fuente de corriente alternativa, por lo que cualquier corte de luz llevaría forzosamente a una suspensión del servicio de venta por internet así como del acceso a datos de otra índole, por no hablar de posibles daños en el servidor y pérdida de datos.
+	
+Con respecto a medidas de seguridad físicas para limitar o impedir el acceso a dispositivos y a la información que estos contienen se puede observar que el servidor no se encuentra dentro de un armario de datos bajo llave, sino que se encuentra en una estantería junto con otros ordenadores.
+	Tanto las ranuras de expansión USB, como la grabadora de DVD que contiene el servidor están visibles y accesibles, pero además, la parte posterior del servidor está también accesible y pueden observarse las tarjetas de red. Si algún empleado malintencionado quisiera llevarse datos podría hacerlo pinchando una memoria USB, grabando un DVD o conectando otro PC a una tarjeta de red del servidor, interrumpiendo además el servicio web o de acceso a los datos. \textbf{(Ver anexo servidor)}.
+	
+	La ausencia de un cortafuegos físico que limite el acceso al mismo desde fuera es otra deficiencia de la seguridad importante, ya que puede dar lugar a que datos de carácter personal sobre los empleados de la empresa, cuentas, claves, etc. pueden ser accedidos desde fuera de la empresa vía web.
+	
+Cuando se preguntó al personal responsable de informática sobre qué procedimientos se seguían para el correcto procesamiento y almacenamiento de los datos de la empresa se nos contestó que sí se había definido un responsable para administrar esos datos y su almacenamiento, pero que no se le había informado sobre la existencia de ningún procedimiento, por lo que se había optado por almacenar todos los datos en un mismo servidor, incluso en un mismo directorio dentro de éste.
+Indagando un poco más se descubrió que sí se realizaban copias de seguridad de los datos, tanto los referidos a la información sensible a la empresa, como la información de los productos que venden; lamentablemente el soporte en el que se almacena la copia de respaldo de esos datos es un disco duro externo que se guarda en un cajón, sin vigilancia ni medidas de seguridad, del mismo edificio en el que se encuentra el servidor. \textbf{(Ver anexo cajón con llaves)}.
+
+	A parte del encargado de administrar los datos, nadie accede, en principio, a los datos, pero no se toman las medidas de seguridad apropiadas para asegurarse de que no accedan a los datos personas no autorizadas. De hecho se ha preguntado por los ficheros de \textit{log}, pero examinando los logs de accesos al sistema se ha detectado que existen accesos al servidor por empleados que usan la cuenta -empleado- y no están relacionados con datos informáticos, incluso puede que alguno de esos accesos se hayan hecho por empleados que fueron despedidos, pero no se puede probar ya que todos los empleados usan la misma cuenta. Se advierte de que la información que dichos usuarios puedan extraer de la empresa podría ser vendida a la competencia. Además, dichos logs corresponden únicamente a los últimos 3 meses de actividad, siendo de 2 años el periodo exigido por la ley. (Ver anexo logs).
+
+	Respecto a ficheros de datos, cuyo soporte no es el electrónico, se encuentra una estantería llena de papeles con información relevante para la empresa. Esta estantería no está protegida bajo llave u otros sistemas de seguridad, y además mezcla datos y cajas u otras cosas sin un orden aparente. Aquí existe también un serio problema de seguridad, ya que la información contenida en esos papeles puede ser fácilmente accedida. (Ver anexo estantería).
+	
+	Estudiando los comportamientos de seguridad de los empleados se observa que:
+		- El estado de sus ordenadores no es el adecuado. Tienen los ordenadores abiertos físicamente, dejando al descubierto la electrónica y los dispositivos de almacenamiento de datos (como el disco duro), siendo relativamente fácil dañar un equipo o robar información del mismo. \textbf{(Ver anexo PC abierto)}.
+		- Por otro lado, cuando un empleado abandona su puesto de trabajo, éste no bloquea el acceso al mismo, por lo que cualquier otro empleado podría usar este ordenador con fines malintencionados.
+
+	A la hora de eliminar o destruir datos existen dos vías para hacerlo: si los datos se encuentran en soporte electrónico, es el administrador de datos el que los borra; y, si los datos están en papel, para eliminarlos se rompe el papel y se tira a la papelera. En cuanto al procedimiento a seguir cuando se estropea un soporte de almacenamiento, no está especificado, por lo que simplemente, o bien se tira a la basura o bien se lleva a reciclar, pero no se destruye la información que contiene, por lo que alguien podría recuperar esos datos de alguna manera usando un lector magnético, etc. \textbf{(Ver anexos papelera)}.
+	
+	Tampoco se han encontrado existencias de un libro de incidencias, tal y como dicta el artículo 10 del Real Decreto 994/99, en que hagan constar los siguientes puntos:
+		a) el tipo de incidencia
+		b) El momento en que se produce
+		c) La persona que realiza la notificación
+		d) A quién se le comunica
+		e) Los efectos que se deriven de la incidencia.
+
+\end{spacing}
